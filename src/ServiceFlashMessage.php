@@ -38,7 +38,7 @@ final class ServiceFlashMessage
             $this->flash->add(
                 $type,
                 [
-                    'body' => $header !== null ? '<b>' . $header . '</b>' . '<br>' . $body : $body,
+                    'body' => $header !== null ? "<h4 class=\"alert-heading\">{$header}</h4>{$body}" : $body,
                     'closeButton' => $closeButton,
                     'options' => $options,
                 ]
